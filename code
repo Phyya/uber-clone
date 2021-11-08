@@ -1,12 +1,13 @@
-npm i -D tailwindcss@latest postcss@latest autoprefixer@latest
-npm i -D tailwind-styled-components
-npx tailwindcss init -postcss
+# npm i -D tailwindcss@latest postcss@latest autoprefixer@latest
+# npm i -D tailwind-styled-components
+# npx tailwindcss init -p
+# npm install mapbox-gl --save
 
-purge : ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*,{js,ts,jsx,tsx)'}]
-in pages/_app.js,  import "tailwindcss/tailwind.css"
-in index.js import tw from "tailwind-styled-components"
+# purge : ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx)'}]
+
+
 go to tailwindcss.com/docs/guides/nextjs
-go to mapbox, create an account
+
 
 
 
@@ -14,21 +15,4 @@ go to mapbox, create an account
 by default = npx create-next-app -e wth-tailwindcss my-project
 
 
-index.js
-return(
-    <Wrapper>
-    <UberMap></UberMap>
-    <ActionItems></ActionItems>
-    </Wrapper>
-)
 
-
-const Wrapper = tw.div`
- flex flex-col bg-red-500 h-screen
-`
-const UberMap = tw.div`
-flex-1
-`
-const ActionItems = tw.div`
-flex-1
-`
